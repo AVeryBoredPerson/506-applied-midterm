@@ -1,0 +1,11 @@
+{
+  "data_sha256": "61ba217ab1566693d9f3eecf03462a440eaab44229f19245cef13fc984c68499",
+  "training_code": "e7fa3ef4cdb044542b27c6f58ee81d78e65b0d6977c8cdb16520b28b6993e203",
+  "feature_set": "rich",
+  "alpha": 3e-06,
+  "nb_blend": 0.4,
+  "seed": 42,
+  "sklearn": "1.7.1",
+  "numpy": "2.2.5",
+  "scipy": "1.15.2"
+}

@@ -1,0 +1,7 @@
+{
+  "model": "svm",
+  "C": 0.05,
+  "class_weights": "\"balanced\"",
+  "use_item_history": true,
+  "mode": "quick"
+}
