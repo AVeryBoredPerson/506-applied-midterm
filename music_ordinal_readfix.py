@@ -34,7 +34,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import OneHotEncoder, StandardScaler
 
 # ----------------------- YOUR SETTINGS -----------------------
-MODE = "validate"                 # "validate" OR "submit"
+MODE = "submit"                 # "validate" OR "submit"
 ALPHA = 0.00001                   # Regularization of each binary classifier
 TRAIN_START = 0                   # For validation only: slice shuffled training rows
 TRAIN_END = None                  # None = all local training rows

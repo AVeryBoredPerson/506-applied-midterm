@@ -1,0 +1,99 @@
+{
+  "signature": {
+    "data_sha256": "61ba217ab1566693d9f3eecf03462a440eaab44229f19245cef13fc984c68499",
+    "training_code_sha256": "9ea706e134b25bde21f9c15b3574bedfded09eea05787cc3443e98f05b9f3b36",
+    "alpha": 1e-05,
+    "folds": 5,
+    "calibration_fraction": 0.2,
+    "seed": 42,
+    "id_columns": [
+      "reviewerID",
+      "album_mbid",
+      "artist_mbid"
+    ],
+    "number_columns": [
+      "helpful_share",
+      "log_votes",
+      "log_length",
+      "year"
+    ],
+    "python": "3.13.14",
+    "sklearn": "1.7.1",
+    "numpy": "2.2.5",
+    "pandas": "3.0.0",
+    "scipy": "1.15.2"
+  },
+  "decision_settings": {
+    "nb_blend": 0.4,
+    "weight_options": [
+      0.4,
+      0.55,
+      0.7,
+      0.85,
+      1.0,
+      1.2,
+      1.5,
+      1.8,
+      2.2,
+      2.8,
+      3.5
+    ],
+    "pair_options": [
+      0.75,
+      1.0,
+      1.25,
+      1.5
+    ]
+  },
+  "approach": "blend_costs",
+  "mean_cv_f1": 0.541299325021116,
+  "weights": [
+    1.5,
+    2.2,
+    1.5,
+    1.2,
+    1.0
+  ],
+  "pair_multipliers": [
+    0.75,
+    0.75
+  ],
+  "cost_matrix": [
+    [
+      0.0,
+      1.5,
+      1.5,
+      1.5,
+      1.5
+    ],
+    [
+      2.2,
+      0.0,
+      1.6500000000000001,
+      2.2,
+      2.2
+    ],
+    [
+      1.5,
+      1.125,
+      0.0,
+      1.125,
+      1.5
+    ],
+    [
+      1.2,
+      1.2,
+      0.8999999999999999,
+      0.0,
+      1.2
+    ],
+    [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      0.0
+    ]
+  ],
+  "note": "Final rule fitted on pooled OOF labels; its training score is NOT a test score."
+}
