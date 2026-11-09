@@ -37,14 +37,14 @@ from sklearn.model_selection import StratifiedKFold, train_test_split
 import music_rich_ordinal as rich
 
 # ========================= SETTINGS =========================
-MODE = "cv"                         # "cv" or "submit"
-RUN_NAME = "rich_ordinal_5fold_alpha2_blend3"     # New RUN_NAME if model, folds or data changes
+MODE = "submit"                         # "cv" or "submit"
+RUN_NAME = "rich_ordinal_5fold_alpha2_blend5"     # New RUN_NAME if model, folds or data changes
 N_FOLDS = 5
 INNER_TUNE_FRACTION = 0.125       # Of each outer-training partition
 ALPHA = 2e-6
-NB_BLEND = 0.30
+NB_BLEND = 0.50
 SEED = 42
-SUBMISSION_NAME = "rich_ordinal_5fold_alpha2.csv"
+SUBMISSION_NAME = "rich_ordinal_5fold_alpha2_blend5.csv"
 # ============================================================
 
 BASE = Path(__file__).resolve().parent
